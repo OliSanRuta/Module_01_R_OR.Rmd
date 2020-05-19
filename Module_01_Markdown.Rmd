@@ -1,0 +1,80 @@
+---
+title: "Module_01_Markdown_ROlive"
+author: "RUTAGANDA NISHIMWE Olive"
+date: "27/02/2020"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+# La Légionellose : brève introduction
+
+La légionellose est une maladie **infectieuse pulmonaire** qui a été répertoriée récemment et n’est pas très courante. Elle est causée par une **bactérie hydrotellurique** (vivant dans les eaux et les sols humides) de la famille des ***Legionellaceae*** ou **Légionelles** et de manière plus courante par une bactérie nommée ***Legionella Pneumophila*** (90 à 98 % des cas).
+Cette maladie doit son nom au fait qu’on l’a premièrement identifiée sur un groupe de vétérans américains de la guerre de Corée, réunis à Philadelphie en 1976 lors d’un congrès de l’American Legion. 
+
+# Les Legionellaceae :
+
+Famille de bactéries **intracellulaires facultatives** à gram négatif, hydrotellurique, aérobies et ne formant pas d’endospore ni de microcyste. Elles prolifèrent **lentement** et dans ces conditions : 
+
+* eau stagnante ;
+* température entre 20 et 60°C ;
+* présence de dépôts de tartre ;
+* boues ;
+* …
+
+Tout cela fait que les légionelles ont tendances à se développer dans les **stations thermales, les circuits d’eau de bâtiments ou encore les systèmes de climatisation**.
+
+## Legionella Pneumophila :
+
+Cette espèce est un bacille ubiquitaire qui parasite les **monocytes humains** (macrophages, cellules dendritiques , ...) et certains protistes phagotrophes.
+
+# Mode de contamination et de transmission :
+
+Il n’y a **pas de possibilité** de transmission interhumaine. L’infection est dû à l’**inhalation** de particules d’**aérosol**. 
+
+# Symptômes : 
+
+La période d'incubation est de **2 à 10 jours (et jusqu'à 19 jours)**.
+Il n'y a **pas de signe clinique spécifique** de la légionellose, la maladie se manifeste principalement par une **pneumopathie sévère** et **progressive** accompagnée de nombreux **symptômes extra-pulmonaires** : altération de l'état général, malaise, céphalées,
+fièvre (la température dépasse 40 °C chez plus de la moitié des malades) et frissons. Mais aussi des **manifestations neurologiques** : confusion, désorientation, obnubilation, léthargie, coma, délire et hallucinations, **myalgies** (douleurs musculaires), **troubles digestifs** : diarrhée, nausées et vomissements, douleurs abdominales.
+
+
+# Traitement :
+
+Le **choix thérapeutique antibiotique** dépend de la **gravité** de la légionellose et du terrain sous-jacent: 
+
+* **formes non graves** (patient ambulatoire ou hospitalisé en médecine ou aux urgences) : 
+
+monothérapie par macrolide 
+
+* **formes graves** (patient hospitalisé en unité de soins intensifs ou en réanimation, et/ou patient immunodéprimé) : 
+
+1. soit **monothérapie** par fluoroquinolone 
+
+2. soit **association de deux antibiotiques** (parmi : macrolides IV, fluoroquinolones, rifampicine). 
+
+La durée du traitement dépend de la gravité est de **8 à 14 jours** pour les formes non graves, **allongée à 21 jours** dans les formes graves et/ou chez l’immunodéprimé.
+
+Certains **publics** sont **plus fragiles** face à la légionellose : les fumeurs, les diabétiques, les personnes souffrant d’une autre pathologie pulmonaire ou cardiaque, mais aussi celles qui ont une immunité diminuée (traitement anticancéreux, greffés récents…) ou une insuffisance rénale.
+
+Voici une courte animation qui permettra de comprendre un peu mieux ce qu'il se passe lors de l'entrée de *Légionella Pneumophila* dans le corps humain par inhalation : [Youtube](https://www.youtube.com/watch?v=dD4d_apLtl0)
+
+--------
+
+![Logo de l'université de mons](https://web.umons.ac.be/app/themes/umons/assets/img/layout/logo-prelude.svg)
+
+--------
+
+|Régions               |Années |Population|
+|----------------------|:-----:|:--------:|
+|**Flandres**          |2019   |6.589.069 |
+|**Flandres**          |2018   |6.552.967 |
+|**Bruxelles-capitale**|2019   |1.208.542 |
+|**Bruxelles-capitale**|2018   |1.191.604 |
+|**Wallonie**          |2019   |3.633.795 |
+|**Wallonie**          |2018   |3.624.377 |
+
+-------
+
+
+

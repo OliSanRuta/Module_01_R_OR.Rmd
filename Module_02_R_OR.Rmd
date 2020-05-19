@@ -1,0 +1,214 @@
+---
+title: "Module_02_R_OR.Rmd"
+author: "RUTAGANDA NISHIMWE Olive"
+date: "01/05/2020"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+#Analyse de données : activité 1.5.2
+
+## Localisation absolue du fichier .RMD
+
+
+```{r}
+getwd()
+```
+```{r}
+knitr::current_input(dir = TRUE)
+```
+
+## Créer de l'arborescence dans le dossier analyse
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+dir.create("Dossier1")
+dir.create("Dossier1/Dossier1a")
+dir.create("Dossier1/Dossier1b")
+dir.create("Dossier1/Dossier1b/Dossier1b1")
+dir.create("Dossier1/Dossier1b/Dossier1b2")
+dir.create("Dossier1/Dossier1c")
+```
+
+## Créer des fichiers dans le sous dossier1b1
+```{r}
+setwd("../")
+
+file.create("Dossier1/Dossier1b/Dossier1b1/Markdown.Rmd")
+# Creation du fichier Markdown.Rmd dans le dossier 1b1
+
+file.create("Dossier1/Dossier1b/Dossier1b1/Code.R")
+# Creation du fichier Code.R dans le dossier 1b1
+
+file.create("Dossier1/Dossier1b/Dossier1b1/Biblio.bib")
+# Creation du fichier Markdown.Rmd dans le dossier 1b1
+```
+
+## Faire une copie du fichier Markdown.rmd
+
+```{r}
+setwd("../")
+file.copy(from = "Dossier1/Dossier1b/Dossier1b1/Markdown.Rmd", to = "Dossier1/Dossier1c/Markdown_copy.Rmd")
+```
+
+## Renommer code.R en script.R
+
+```{r}
+setwd("../")
+file.rename(from = "Dossier1/Dossier1b/Dossier1b1/Code.R", to = "Dossier1/Dossier1b/Dossier1b1/Script.R")
+```
+
+## Supprimer Dossier1b2
+
+```{r}
+setwd("../")
+unlink("Dossier1/Dossier1b/Dossier1b2", recursive = TRUE)
+```
+
+## Vérifier que le fichier Markdown_copy.Rmd existe bien dans Dossier1c
+
+```{r}
+setwd("../")
+file.exists("Dossier1/Dossier1c/Markdown_copy.Rmd")
+
+```
+
+## Copier le fichier Biblio.bib dans le Dossier1a et supprimer le du dossier d’origine.
+
+```{r}
+setwd("../")
+file.copy(from = "Dossier1/Dossier1b/Dossier1b1/biblio.bib", to = "Dossier1/Dossier1a")
+unlink("Dossier1/Dossier1b/Dossier1b1/biblio.bib", recursive = TRUE)
+```
+
+## Donner l’arborescence de Dossier1
+
+```{r}
+setwd("../")
+fs::dir_tree("Dossier1")
+```
+
+## Supprimer Dossier1
+
+```{r}
+setwd("../")
+unlink("Dossier1", recursive = TRUE)
+```
+
+# 2.1.1 Activités : Utilisez un opérateur
+```{r}
+print("Le resultat de l'addition est: ")
+2 + 7
+print("test si 2 est plus grand que 7:")
+2 > 7
+print("test de l'égalité entre 2 et 1+11")
+2 == 1+1
+print("Test de la différence entre 2 et 3-1")
+2 != 3-1
+print("Test si 2 est plus grand ou égal à 1")
+2 >= 1
+print("résultat de la division de 2 par 7")
+2 / 7
+print("resultat de la multiplication de 2 par 7")
+2 * 7
+print("test si 6/2 est inférieur ou égal à 3")
+6/2 <= 3
+print("test si (2*7) est plus petit que 21-7")
+2*7 < 21-7
+```
+
+## Activité 2.1.2
+
+```{r}
+print("Le resultat de l'équation est 1 :")
+(sqrt(2*pi)/3)*(exp(-4))+4^2
+x <- 2
+
+
+```
+
+
+## Activité 2.2.5
+
+```{r}
+#Créer la variable f et assigner lui la valeur (2 + 7) × 2.
+f <- (2+7)*2
+```
+
+```{r}
+# créer les vecteurs (-2,-1,0,1,2,3) via divers methodes
+vecteur1 <- c(-2,-1,0,1,2,3)
+vecteur2 <- -2:3
+x <- seq(from=-2, to=3, by=1)
+print("Les attributs du vecteur x sont:")
+x
+```
+
+```{r}
+# transformation du vecteur x par addition
+x_modif <- x+4
+
+#Etendre le vecteur pour contenir -1 en première position.
+x_modif <- c(-1, x_modif)
+
+#Etendre le vecteur pour contenir 6 en dernière position.
+x_modif <- c(x_modif, 6)
+```
+
+```{r}
+#Multiplier par 2 la 4ème et 5ème valeur du vecteur x
+index <- 4:5
+
+x_4_5 <- x
+x_4_5[index] <- x_4_5[index]*2
+
+print("Après transformation des éléments 4 et 5  le vecteur x est:")  
+x_4_5
+
+```
+
+```{r}
+#Assigner les premières lettres de l’alphabet aux noms des champs des éléments du vecteur x
+
+x_alphabet <- x
+names(x_alphabet) <- c("A","B","C","D","E","F")
+
+# Utiliser l’indexation par noms pour attrivuer au vecteurx_sub les valeurs de x dont les noms de champs correspondent aux lettres b, c et d.
+
+x_alphabet[c("B", "C", "D")] -> vecteurx_sub
+print("Les coordonnées du vecteurx_sub sont:")
+vecteurx_sub
+```
+
+```{r}
+# Créer une sequence de 0 à 10 de longueur 10
+seq0_10 <- seq(0, 10, length.out = 10)
+print("La séquence comptant 10 éléments de 0 à 10 est:")
+seq0_10
+
+```
+
+```{r}
+#creation de vecteur à l'aide de la fonction rep()
+
+y <- rep(5,8)
+print("Les coordonnées du vecteur y sont:")
+y
+z <- c(rep(-2,2), rep(-1,2),rep(1,2),rep(2,2))
+print("Les coordonnées du vecteur z sont:")
+z
+w <- c(rep(-2, 3), rep(3,5))
+print("Les coordonnées du vecteur w sont:")
+w
+print("Le résultat de l'addition des vecteurs z et y est:")
+z+y
+
+```
+
+
